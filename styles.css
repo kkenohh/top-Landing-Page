@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+navbar {
+    width: 100%;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    color: #333;
+    background-color: #1f2937;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ddd;  
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.list li a {
+    text-decoration: none;
+    color: inherit;
+    background-color: #ddd;
+    padding: 12px 16px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.list li a:hover {
+    color: #eee;
+    background-color: #333;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.list li a:visited {
+    color: inherit;
+    background-color: #ddd;
+}
+
+.list li a:visited:hover {
+    color: #eee;
+    background-color: #333;
+}
+
+.main {
+    height: 100%;
+}
+
+footer {
+    padding: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #333;
+}
